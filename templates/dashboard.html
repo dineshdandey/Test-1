@@ -1,0 +1,20 @@
+<ion-view title="Dashboard" id="page4">
+  <ion-content padding="false" class="has-header">
+    <form id="challenges-form2" class="list">
+      <label class="item item-input" id="challenges-search2">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" ng-model="test" placeholder="Search for a Challenge">
+      </label>
+    </form>
+    <div class="spacer" style="width: 300px; height: 6px;"></div>
+    <div ng-repeat="x in names | orderBy:myOrderBy | filter : test" class="list card" id="challenges-card23">
+      <div class=" item item-image">
+        <a style="display:block;" ui-sref="tabsController.cardioChallenge()">
+          <img src="{{x.image}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+		<input type='hidden' value='{{x.title}}'>
+      </div>
+    </div>
+   
+  </ion-content>
+</ion-view>
