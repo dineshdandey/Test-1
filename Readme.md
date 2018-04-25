@@ -6,7 +6,7 @@
 
 2.Clone this repository
 
-        https://github.com/dineshdandey/Codecademy/tree/master/css
+        https://github.com/dineshdandey/Test-1
      
 3. Navigate to the test directory:
 
